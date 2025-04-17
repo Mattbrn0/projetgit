@@ -3,8 +3,10 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\TopMovieController;
 
 Route::apiResource('movie', MovieController::class);
+Route::apiResource('top-movies', TopMovieController::class);
 
 /*
 |--------------------------------------------------------------------------
