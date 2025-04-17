@@ -1,8 +1,7 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import MovieRow from './components/MovieRow';
-import Footer from './components/Footer';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import MovieRow from "./components/MovieRow";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
