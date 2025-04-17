@@ -22,7 +22,7 @@ jobs:
 
   audit:
     runs-on: ubuntu-latest
-    needs: lint
+    needs: lint_frontend
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
@@ -36,7 +36,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    needs: lint
+    needs: lint_frontend
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
