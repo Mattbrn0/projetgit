@@ -18,6 +18,7 @@ return new class extends Migration
             $table->boolean('seen')->default(false);
             $table->integer('rating')->nullable(); // ou float
             $table->text('comment')->nullable();
+            $table->text('image_url')->nullable();
             $table->timestamps();
         });
     }

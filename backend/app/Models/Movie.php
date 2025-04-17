@@ -12,6 +12,6 @@ class Movie extends Model
     protected $table = 'movie';
 
     protected $fillable = [
-        'title', 'platform', 'seen', 'rating', 'comment'
+        'title', 'platform', 'seen', 'rating', 'comment', 'image_url'
     ];
 }
