@@ -9,7 +9,7 @@ export default function Navbar() {
              <li className="hover:text-red-500 cursor-pointer">Accueil</li>
              <li className="hover:text-red-500 cursor-pointer">Films</li>
              <li className="hover:text-red-500 cursor-pointer">Series</li>
-             <li className="hover:text-red-500 cursor-pointer ">Ma liste</li>
+             <li className="hover:text-red-500 cursor-pointer ">Ma listess</li>
            </ul>
            <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
          </nav>
