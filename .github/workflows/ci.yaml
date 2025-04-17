@@ -58,9 +58,7 @@ jobs:
           extensions: pdo, pdo_mysql
           coverage: none
       - name: Install dependencies
-        run: |
-          rm -rf vendor composer.lock
-          composer install --no-progress --prefer-dist
+        run: composer install -vvv --no-progress --prefer-dist
         working-directory: ./backend
 
       - name: Run tests
