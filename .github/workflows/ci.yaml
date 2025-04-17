@@ -62,5 +62,5 @@ jobs:
         working-directory: ./backend
 
       - name: Run tests
-        run: php artisan test
+        run: php artisan key:generate && php artisan test
         working-directory: ./backend
