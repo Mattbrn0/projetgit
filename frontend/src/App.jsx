@@ -6,6 +6,3 @@ function App() {
   );
 }
 export default App;
-
-// This is a simple React component that renders a welcome message.
-// It serves as the main entry point for the application.
