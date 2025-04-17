@@ -1,13 +1,13 @@
-import Navbar from './components/Navbar'
-import HeroBanner from './components/HeroBanner'
-import MovieRow from './components/MovieRow'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import MovieRow from './components/MovieRow';
+import Footer from './components/Footer';
 
 export default function HomePage() {
   return (
     <div className="bg-black text-white min-h-screen">
       <Navbar />
-      <HeroBanner />
+      <Hero />
       <section className="space-y-8 px-4 md:px-8 mt-8">
         <MovieRow title="Trending Now" />
         <MovieRow title="Top Rated" />
@@ -17,5 +17,5 @@ export default function HomePage() {
       </section>
       <Footer />
     </div>
-  )
+  );
 }
