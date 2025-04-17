@@ -1,10 +1,9 @@
 import Navbar from './components/Navbar'
-import HeroBanner from './components/Hero'
+import HeroBanner from './components/HeroBanner'
 import MovieRow from './components/MovieRow'
 import Footer from './components/Footer'
 
-
-export default function App() {
+export default function HomePage() {
   return (
     <div className="bg-black text-white min-h-screen">
       <Navbar />
