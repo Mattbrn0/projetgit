@@ -4,6 +4,7 @@ import MovieRow from "./components/MovieRow";
 import Footer from "./components/Footer";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import MovieCard from "./components/MovieCard";
 
 export default function App() {
   const [result, setResult] = useState(null);
@@ -27,21 +28,19 @@ export default function App() {
     <div className="bg-black text-white min-h-screen">
       <Navbar />
       <section className="space-y-8 px-4 md:px-8 mt-8">
-        {result ? (
-          result.map((movie, index) => (
-            <div key={index} className="border-b border-gray-700 pb-2">
-              {movie.title}
-            </div>
-          ))
-        ) : (
-          <div>Chargement...</div>
-        )}
-
-        {/* <MovieRow title="Trending Now" />
-        <MovieRow title="Top Rated" />
-        <MovieRow title="New Releases" />
-        <MovieRow title="Action Movies" />
-        <MovieRow title="TV Shows" /> */}
+        <div className="flex flex-wrap gap-x-4 gap-y-16">
+          {result ? (
+            result.map((movie, index) => (
+              <MovieCard
+                key={index}
+                title={movie.title}
+                image_url={movie.image_url}
+              />
+            ))
+          ) : (
+            <div>Chargement...</div>
+          )}
+        </div>
       </section>
       <Footer />
     </div>
