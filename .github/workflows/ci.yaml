@@ -61,7 +61,10 @@ jobs:
         run: composer install -vvv --no-progress --prefer-dist
         working-directory: ./backend
 
-      - name: Run tests
-        run: php artisan key:generate 
+      - name: Generate Laravel App Key
+        run: php artisan key:generate
+        working-directory: ./backend
+
+      - name: Run Laravel tests
         run: php artisan test
         working-directory: ./backend
